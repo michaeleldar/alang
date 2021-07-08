@@ -18,7 +18,8 @@ commands = [write]
 def subin():  # takes away a indent
     global indent
     if indent == "":
-        print("ERROR, ENDIF CANNOT BE USED WITHOUT A PRECEEDING IF :(")
+        print(
+            "ERROR, END CANNOT BE USED WITHOUT A PRECEEDING IF, ELSE, ELSE_IF, WHILE, DEF_FUNC OR REPEAT :(")
         outfileo.truncate()
         quit()
     elif indent == "    ":
