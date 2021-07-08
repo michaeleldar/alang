@@ -1,0 +1,1 @@
+echo "/home/$USER/alang/alang.py" >> /home/$USER/.local/bin/alang
