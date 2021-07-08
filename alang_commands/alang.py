@@ -8,6 +8,7 @@ import comala
 import declareala
 import def_funcala
 import divideala
+import elseala
 
 
 sys.stderr = 0
@@ -20,7 +21,8 @@ infileo.seek(0)
 indent = ""
 indinto.write(indent)
 
-commands = [writeala, addala, comala, declareala, def_funcala, divideala]
+commands = [writeala, addala, comala,
+            declareala, def_funcala, divideala, elseala]
 
 
 def scan(line):  # Main compiler
