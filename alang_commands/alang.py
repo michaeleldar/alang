@@ -5,10 +5,10 @@ import write
 
 
 sys.stderr = 0
-#script, infile, outfile = sys.argv
+script, infile, outfile = sys.argv
 indent = ""
-infileo = open('/home/michael/alang1/test/test1.ala', 'r')
-outfileo = open('test/test1.py', 'w')
+infileo = open(infile)
+outfileo = open(outfile)
 infileo.seek(0)
 indent = ""
 
