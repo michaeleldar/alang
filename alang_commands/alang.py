@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 
 import sys
-import writeala
+import write
 
 
 sys.stderr = 0
 #script, infile, outfile = sys.argv
 indent = ""
 infileo = open('/home/michael/alang1/test/test1.ala', 'r')
-outfileo = open('test/test1.ala', 'w')
+outfileo = open('test/test1.py', 'w')
 infileo.seek(0)
 indent = ""
 
-commands = [writeala]
+commands = [write]
 
 
 def subin():  # takes away a indent
@@ -38,8 +38,7 @@ def subin():  # takes away a indent
 def scan(line):  # Main compiler
     for command in commands:
         if command.statement == line[0]:
-            outfileo.write(command.code)
-            indent = command.comindent
+            write.translate(line, indent, outfileo)
 
 
 line = infileo.readline().split()
