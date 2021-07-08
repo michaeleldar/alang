@@ -13,4 +13,3 @@ ELSE_IF "pig" != "plant"
 	WRITE "pig-doestnt-equal-plant\n"
 END
 WRITE "BYE\n"
-
