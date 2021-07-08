@@ -2,6 +2,8 @@
 import sys
 sys.stderr = 0
 script, infile, outfile = sys.argv
+#infile = 'examples/def_func.ala'
+#outfile = 'examples/def_func.py'
 
 indent = ""
 
@@ -75,7 +77,7 @@ def scan(line):  # Main compiler
         outfileo.write(indent + 'def ' + c_line[1] + '():\n')
         indent = indent + '    '
     elif c_line[0] == "RUN_FUNC":
-        outfile.write(indent + c_line[1] + '()\n')
+        outfileo.write(indent + c_line[1] + '()\n')
     elif c_line[0] == "EXIT":
         outfileo.write(indent + "quit()\n")
     elif c_line[0] == "RANDOM":
