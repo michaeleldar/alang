@@ -17,6 +17,7 @@ import multiplyala
 import randomala
 import readintala
 import readstrala
+import repeatala
 
 sys.stderr = 0
 script, infile, outfile = sys.argv
@@ -31,7 +32,7 @@ indinto.write(indent)
 commands = [writeala, addala, comala,
             declareala, def_funcala, divideala, elseala,
             else_ifala, endala, exitala, ifala, multiplyala,
-            randomala, readintala, readstrala]
+            randomala, readintala, readstrala, repeatala]
 
 
 def scan(line):  # Main compiler
