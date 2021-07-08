@@ -82,6 +82,8 @@ def scan(line):  # Main compiler
         outfileo.write(indent + 'import random\n')
         outfileo.write(
             indent + c_line[1] + '=' + 'random.randint(' + c_line[2] + ',' + c_line[3] + ')\n')
+    elif c_line[0] == "COM":
+        pass
     else:
         print("ERROR, ", c_line[0], "IS NOT A COMMAND :(")
         outfileo.truncate()
