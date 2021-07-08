@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
 import sys
+
 import writeala
 import addala
+import comala
 
 
 sys.stderr = 0
@@ -13,7 +15,7 @@ outfileo = open(outfile)
 infileo.seek(0)
 indent = ""
 
-commands = [writeala, addala]
+commands = [writeala, addala, comala]
 
 
 def subin():  # takes away a indent
