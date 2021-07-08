@@ -3,7 +3,7 @@ indent = indento.read()
 indentf = ""
 
 
-def subin(outfileo):  # takes away a indent
+def main(outfileo):  # takes away a indent
     global indent
     global indentf
     if indent == "":
@@ -23,6 +23,4 @@ def subin(outfileo):  # takes away a indent
         print("ERROR, TOO MANY NESTED LOOPS :(")
         outfileo.truncate()
         quit()
-
-
-indento.write(indentf)
+    indento.write(indentf)
