@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import sys
 from alang_commands import *
-from globevars import indent
 sys.stderr = 0
 script, infile, outfile = sys.argv
+
+indent = open('indent', 'r+a')
 
 
 def subin():  # takes away a indent
