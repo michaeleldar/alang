@@ -1,0 +1,18 @@
+ADD <varible name> <number/varible 1> <number/varible 2>
+COM <comment>
+DECLARE <varible name> <value>
+DEF_FUNC <name>
+DIVIDE <varible name> <number/varible 1> <number/varible 2>
+ELSE
+ELSE_IF <number/varible/string 1> <operator like ==> <string/number/varible 2>
+END
+EXIT
+IF <number/varible 1/string> <operator like ==> <string/number/varible 2>
+MULTIPLY <varible name> <number/varible 1> <number/varible 2>
+RANDOM <varible name> <minimum number> <maximum number>
+READINT <varible name> <question>
+READSTR <varible name> <question>
+REPEAT <times>
+RUN_FUNC <name>
+WHILE <varible/string/number> <operator like ==> <string/varible/number>
+WRITE <varible/string>
