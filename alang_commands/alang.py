@@ -23,13 +23,12 @@ import whileala
 
 sys.stderr = 0
 script, infile, outfile = sys.argv
-indent = ""
+indentt = ""
 infileo = open(infile)
 outfileo = open(outfile)
 indinto = open('indent', 'r+w')
 infileo.seek(0)
-indent = ""
-indinto.write(indent)
+indinto.write(indentt)
 
 commands = [writeala, addala, comala,
             declareala, def_funcala, divideala, elseala,
