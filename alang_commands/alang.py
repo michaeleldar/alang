@@ -13,8 +13,10 @@ script, infile, outfile = sys.argv
 indent = ""
 infileo = open(infile)
 outfileo = open(outfile)
+indinto = open('indent', 'r+w')
 infileo.seek(0)
 indent = ""
+indinto.write(indent)
 
 commands = [writeala, addala, comala, declareala]
 
@@ -43,7 +45,7 @@ def subin():  # takes away a indent
 def scan(line):  # Main compiler
     for command in commands:
         if command.statement == line[0]:
-            command.translate(line, indent, outfileo)
+            command.translate(line, outfileo)
 
 
 line = infileo.readline().split()

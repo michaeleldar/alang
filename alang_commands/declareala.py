@@ -1,5 +1,6 @@
 statement = "DECLARE"
+indent = open('indent', 'r').read()
 
 
-def translate(line, indent, outfile):
+def translate(line, outfile):
     outfile.write(indent + line[1] + '=' + line[2] + '\n')

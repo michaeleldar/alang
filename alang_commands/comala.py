@@ -1,5 +1,5 @@
 statement = "COM"
 
 
-def translate(line, indent, outfile):
+def translate(line, outfile):
     pass
