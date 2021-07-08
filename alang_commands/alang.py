@@ -15,6 +15,8 @@ import exitala
 import ifala
 import multiplyala
 import randomala
+import readintala
+import readstrala
 
 sys.stderr = 0
 script, infile, outfile = sys.argv
@@ -29,7 +31,7 @@ indinto.write(indent)
 commands = [writeala, addala, comala,
             declareala, def_funcala, divideala, elseala,
             else_ifala, endala, exitala, ifala, multiplyala,
-            randomala]
+            randomala, readintala, readstrala]
 
 
 def scan(line):  # Main compiler
