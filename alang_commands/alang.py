@@ -38,7 +38,7 @@ commands = [writeala, addala, comala,
             whileala, run_funcala]
 
 
-def scan(line):  # Main compiler
+def scan():  # Main compiler
     for command in commands:
         if command.statement == line[0]:
             command.translate(line, outfileo)
@@ -47,7 +47,7 @@ def scan(line):  # Main compiler
 line = infileo.readline().split()
 
 while line != "":
-    scan(line)
+    scan()
     line = infileo.readline().split()
 
 infileo.close()
