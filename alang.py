@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import sys
+from alang_commands import *
+import globevars
 sys.stderr = 0
 script, infile, outfile = sys.argv
 #infile = 'examples/def_func.ala'
 #outfile = 'examples/def_func.py'
-
-indent = ""
 
 
 def subin():  # takes away a indent

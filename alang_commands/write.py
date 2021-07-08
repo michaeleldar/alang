@@ -1,0 +1,4 @@
+statement = "WRITE"
+
+
+def translate():
