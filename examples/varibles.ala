@@ -1,3 +1,0 @@
-DECLARE pies "999999"
-WRITE pies
-WRITE "\n"
