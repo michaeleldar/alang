@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 import sys
-import write
+import writeala
+import addala
 
 
 sys.stderr = 0
@@ -12,7 +13,7 @@ outfileo = open(outfile)
 infileo.seek(0)
 indent = ""
 
-commands = [write]
+commands = [writeala, addala]
 
 
 def subin():  # takes away a indent
@@ -39,7 +40,7 @@ def subin():  # takes away a indent
 def scan(line):  # Main compiler
     for command in commands:
         if command.statement == line[0]:
-            write.translate(line, indent, outfileo)
+            command.translate(line, indent, outfileo)
 
 
 line = infileo.readline().split()
