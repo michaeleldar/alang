@@ -10,6 +10,9 @@ import def_funcala
 import divideala
 import elseala
 import else_ifala
+import endala
+import exitala
+import ifala
 
 
 sys.stderr = 0
@@ -23,7 +26,7 @@ indent = ""
 indinto.write(indent)
 
 commands = [writeala, addala, comala,
-            declareala, def_funcala, divideala, elseala, else_ifala]
+            declareala, def_funcala, divideala, elseala, else_ifala, endala, exitala, ifala]
 
 
 def scan(line):  # Main compiler
