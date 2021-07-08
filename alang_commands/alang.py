@@ -7,7 +7,7 @@ import writeala
 sys.stderr = 0
 #script, infile, outfile = sys.argv
 indent = ""
-infileo = open('test/test1.ala', 'r')
+infileo = open('/home/michael/alang1/test/test1.ala', 'r')
 outfileo = open('test/test1.ala', 'w')
 infileo.seek(0)
 indent = ""
