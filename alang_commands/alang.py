@@ -38,6 +38,7 @@ def scan(line):  # Main compiler
     for command in commands:
         if command.statement == line[0]:
             outfileo.write(command.code)
+            indent = command.comindent
 
 
 line = infileo.readline().split()
