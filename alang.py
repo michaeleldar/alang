@@ -3,8 +3,11 @@ import sys
 from alang_commands import *
 sys.stderr = 0
 script, infile, outfile = sys.argv
-
-indent = open('global_vars/indent', 'r+a')
+infilet = open('global_vars/infile', 'r+w')
+outfilet = open('global_vars/outfile', 'r+w')
+infilet.write(infile)
+outfilet.write(outfile)
+indent = open('global_vars/indent', 'r+w')
 indent.write('""')
 
 
