@@ -4,7 +4,8 @@ from alang_commands import *
 sys.stderr = 0
 script, infile, outfile = sys.argv
 
-indent = open('indent', 'r+a')
+indent = open('global_vars/indent', 'r+a')
+indent.write('""')
 
 
 def subin():  # takes away a indent
