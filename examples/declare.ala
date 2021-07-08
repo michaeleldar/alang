@@ -1,3 +1,0 @@
-DECLARE books "a-lot!"
-WRITE books
-WRITE "\n"

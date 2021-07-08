@@ -1,4 +1,0 @@
-DEF_FUNC write_hi
-WRITE "Hi"
-END
-RUN_FUNC write_hi
