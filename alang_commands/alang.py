@@ -13,7 +13,8 @@ import else_ifala
 import endala
 import exitala
 import ifala
-
+import multiplyala
+import randomala
 
 sys.stderr = 0
 script, infile, outfile = sys.argv
@@ -26,7 +27,9 @@ indent = ""
 indinto.write(indent)
 
 commands = [writeala, addala, comala,
-            declareala, def_funcala, divideala, elseala, else_ifala, endala, exitala, ifala]
+            declareala, def_funcala, divideala, elseala,
+            else_ifala, endala, exitala, ifala, multiplyala,
+            randomala]
 
 
 def scan(line):  # Main compiler
