@@ -1,4 +1,4 @@
-indento = open('indent', 'r+w')
+indento = open('indent', 'w+')
 indent = indento.read()
 indentf = ""
 

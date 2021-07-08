@@ -1,5 +1,5 @@
 statement = "ELSE"
-indent = open('indent', 'r+w')
+indent = open('indent', 'w+')
 
 
 def translate(line, outfile):
