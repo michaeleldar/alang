@@ -5,11 +5,12 @@ import writeala
 
 
 sys.stderr = 0
-script, infile, outfile = sys.argv
+#script, infile, outfile = sys.argv
 indent = ""
-infileo = open(infile, 'r')
-outfileo = open(outfile, 'w')
+infileo = open('test/test1.ala', 'r')
+outfileo = open('test/test1.ala', 'w')
 infileo.seek(0)
+indent = ""
 
 commands = [writeala]
 
