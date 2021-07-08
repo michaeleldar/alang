@@ -5,6 +5,7 @@ import sys
 import writeala
 import addala
 import comala
+import declareala
 
 
 sys.stderr = 0
@@ -15,7 +16,7 @@ outfileo = open(outfile)
 infileo.seek(0)
 indent = ""
 
-commands = [writeala, addala, comala]
+commands = [writeala, addala, comala, declareala]
 
 
 def subin():  # takes away a indent
