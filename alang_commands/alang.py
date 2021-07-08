@@ -1,9 +1,17 @@
 #!/usr/bin/python3
+
 import sys
-from alang_commands import *
+import writeala
+
+
 sys.stderr = 0
 script, infile, outfile = sys.argv
 indent = ""
+infileo = open(infile, 'r')
+outfileo = open(outfile, 'w')
+infileo.seek(0)
+
+commands = [writeala]
 
 
 def subin():  # takes away a indent
@@ -27,13 +35,11 @@ def subin():  # takes away a indent
 
 
 def scan(line):  # Main compiler
-    pass
+    for command in commands:
+        if command.statement == line[0]:
+            outfileo.write(command.code)
 
 
-infileo = open(infile, 'r')
-outfileo = open(outfile, 'w')
-
-infileo.seek(0)
 line = infileo.readline().split()
 
 while line != "":
