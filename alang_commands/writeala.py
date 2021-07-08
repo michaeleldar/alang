@@ -1,6 +1,6 @@
-import barrier_test
+import alang
 statement = "WRITE"
 
 
-code = f"{barrier_test.alang.indent}print('{barrier_test.alang.line[1]}')\n"
-comindent = barrier_test.alang.indent
+code = f"{alang.indent}print('{alang.line[1]}')\n"
+comindent = alang.indent

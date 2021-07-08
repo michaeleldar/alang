@@ -1,1 +1,1 @@
-echo "/home/$USER/alang/alang.py" >> /home/$USER/.local/bin/alang
+echo "/home/$USER/alang1/alang_commands/alang.py" >> /home/$USER/.local/bin/alang1
