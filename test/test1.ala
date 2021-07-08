@@ -1,0 +1,16 @@
+WRITE "HELLO\n"
+IF "hello" == "hello"
+	WRITE "hello-equals-hello\n"
+END
+ELSE
+	WRITE "hello-doestnt-equal-hello\n"
+END
+WRITE "Hi,-again\n"
+IF "pig" == "plant"
+	WRITE "pig-equals-plant\n"
+END
+ELSE_IF "pig" != "plant"
+	WRITE "pig-doestnt-equal-plant\n"
+END
+WRITE "BYE\n"
+
