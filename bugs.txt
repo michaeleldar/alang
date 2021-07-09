@@ -1,0 +1,4 @@
+Number | Verion | Priority | Bug Description
+
+1      |0       | Medium   | Nested loops don't work
+2      |1+0     | Low      | Alang command does'nt work
